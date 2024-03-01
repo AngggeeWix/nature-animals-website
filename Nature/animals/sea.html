@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.bundle.min.js">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Francois+One&family=Merriweather&family=Merriweather+Sans&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+
+<style type="text/css">
+	.header{
+		height: 500px;
+		
+	}
+
+	.threeNaRow{
+		height: 220px;
+		background-color:#4E944F;
+	}
+	
+	.square{
+		height: 250px;
+	}
+
+	.ignoreRow{
+		height: 50px;
+	}
+
+	.leftMargin{
+		padding-left: 200px;
+		padding-top: 20px;
+		
+	}
+	
+	.next2{
+		padding-left: 200px;
+		padding-top: 20px;
+		height:700px;
+		
+	}
+	.gapIto{
+		grid-column-gap: 40px;
+	}
+
+	.longRow{
+		height: 400px;
+	}
+	
+	.medRow{
+		height: 350px;
+	}
+
+
+	.footernato{
+		height: 120px;
+		
+	}
+
+	* {box-sizing:border-box}
+	
+	.img1{
+	margin-left:70px;
+	margin-top:10px;
+	}
+	.texttitle{
+	font-weight:bold;
+	font-family: 'Secular One', sans-serif;
+	margin-top:10px;
+	margin-bottom:30px;
+	font-size:60px;
+	text-shadow: 5px 5px white;
+	text-align: center;
+	}
+	
+
+	.slideshow-container {
+	  width: 1357px;
+	  height:497px;
+	  position: relative;
+	  margin: auto;
+	}
+
+
+	.mySlides {
+	  display: none;
+}
+
+
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	.textcontent{
+	font-family: 'Assistant', sans-serif;
+	font-size:18px;
+	text-align:center;
+	font-weight:bold;
+	color:white;
+	background-color:black;
+	padding:10px;
+	border-radius: 25px;
+	}
+	
+	
+	.square2{
+	background-color:white;
+	height:150px;
+	margin-top:40px;
+	}
+	
+	.title3{
+	font-size:30px;
+	font-family: 'Secular One', sans-serif;
+	margin-top: 10px;
+	text-align:center;
+	color:black;
+	
+	}
+	
+	.textcontent3{
+	font-family: 'Assistant', sans-serif;
+	font-size:20px;
+	color:white;
+	font-weight:bold;
+	margin-top:80px;
+	}
+	
+	.textcontent4{
+	font-family: 'Assistant', sans-serif;
+	font-size:20px;
+	color:white;
+	font-weight:bold;
+	margin-left:40px;
+	}
+	
+	.textcontent5{
+	font-family: 'Assistant', sans-serif;
+	color:black;
+	margin-top:80px;
+	font-weight:bold;
+	font-size:18px;
+	}
+	
+	a:link {
+	text-decoration: none; 
+	
+	}
+	
+	.footertext{
+	text-align:center;
+	margin-top:10px;
+	font-family: 'Assistant', sans-serif;
+	}
+	.shadow{
+	 border:2px solid #000000;
+      color:black;
+      font-size:50px;
+      -moz-box-shadow: 10px 10px 50px #ccc;
+      -webkit-box-shadow: 10px 10px 50px #ccc;
+      box-shadow: 10px 10px 50px #ccc;
+	}
+	
+	.shadow2{
+	filter: drop-shadow(10px 10px 4px #423F3E);
+	}
+	.shadow3{
+	filter: drop-shadow(10px 10px 4px #ACB992);
+	}
+
+	
+	.gapngcol{
+		grid-row-gap: 40px;
+	}
+	.leftNaMargin{
+		padding-left: 270px;
+	}
+	.gapIto{
+		grid-column-gap: 40px;
+	}
+	
+	.medRow{
+		height: 400px;
+		width: 400px;
+		margin-bottom:90px;
+	}
+
+		.colorlang{
+		background-color: black;
+		color: white;
+	}
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > * {
+    margin: 5px;
+  }
+}
+
+.media {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:10px;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+p {
+  font-family: 'Secular One', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing:1px;
+  color:#4E944F;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
+  }
+}
+
+body{
+background-color:#E4E9BE;
+}
+.imgh{
+background-image:url("img/headera.png");
+  background-repeat: no-repeat;
+}
+
+</style>
+<body>
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+		<a class="navbar-brand" href="#">
+		<img src="img/NATURE.png" alt="">
+		</a>
+		</div>
+
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+        <a class="nav-link" href="homepage.html">HOME</a>
+        <a class="nav-link" href="aerial.html">ANIMALS</a>
+        <a class="nav-link" href="">NATURE</a>
+        <a class="nav-link" href="">AWARENESS</a>
+		<a class="nav-link" href="ref.html">REFERENCES</a>
+		</nav>
+    </div>
+  </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 header imgh">
+			
+			</div>
+		</div>
+		<br> <br>
+		<div class="row leftMargin gapIto">
+			<div class="col-3  threeNaRow">
+				<div class="wrapper">
+				<div class="media">
+				
+				<div class="layer">
+				<a href="aerial.html"> <p>AERIAL <BR> ANIMALS</p> </a>
+				</div> 
+				<img src="img/2a.png"> 
+			</div> 
+			 </div> </a> </div> 
+			<div class="col-3  threeNaRow"> 
+				<div class="wrapper">
+				<div class="media">
+				<div class="layer">
+				<a href="land.html"> <p>LAND <BR> ANIMALS</p> </a>
+				</div>
+				<img src="img/meerkat.png">
+			</div>
+			 </div> </div>
+			
+			<div class="col-3  threeNaRow ">
+				<div class="wrapper">
+				<div class="media">
+				<div class="layer">
+				<a href="sea.html"> <p>SEA <BR> ANIMALS</p> </a>
+				</div>
+				<img src="img/whale.png">
+			</div>
+			 </div> </div>
+			</div>
+		</div>
+		<br> <br>
+
+		<div class="texttitle">SEA ANIMALS</div>
+		<div class="row  leftNaMargin gapIto gapngcol ">
+			<div class="col-5 medRow">
+				<img src="img/dolphin.png">
+			</div>
+			<div class="col-5 medRow "> 
+				<div class="textcontent">	Dolphins are small-toothed cetaceans easily recognizable by their curved mouths, 
+				which give them a permanent “smile.” There are 36 dolphin species, found in every ocean. Most dolphins are marine 
+				and live in the ocean or brackish waters along coastlines.There are a few species, however, like the South Asian river 
+				dolphin and the Amazon river dolphin, or boto, that live in freshwater streams and rivers. <br> <br>
+				Dolphins feed chiefly on fish and squid, which they track using echolocation, a built-in sonar that bounces 
+				sound waves off prey and reveals information like its location, size, and shape. 
+				</div>
+			</div>
+			<div class="col-5  medRow"> 
+				<img src="img/seal.png">
+			</div>
+			<div class="col-5  medRow"> 
+				<div class="textcontent">	Sea lions, seals, and walruses are in a scientific group of mammals called pinnipeds, 
+				which means "wing foot" or "feather foot." You could probably pick out a walrus if you saw one, but how do you tell sea lions
+				and seals apart? Sea lions and seals are marine mammals, spending a good part of each day in the ocean to find their food. 
+				They all have flippers at the end of their limbs to help them swim. Like all marine mammals, they have a thick layer of blubber 
+				to keep them warm in the chilly ocean. And they all like to eat fish—lots of fish!
+				</div>
+			</div>	
+		</div>
+		<br> <br>
+		<div class="row  leftNaMargin gapIto gapngcol ">
+			<div class="col-5  medRow">
+				<img src="img/whale2.png">
+			</div>
+			<div class="col-5 medRow"> 
+				<div class="textcontent">Whales roam throughout all of the world's oceans, communicating with complex and mysterious sounds. 
+				Their sheer size amazes us: the blue whale can reach lengths of more than 100 feet and weigh up to 200 tons—as much as 33 elephants.
+				Despite living in the water, whales breathe air. And like humans, they are warm-blooded mammals who nurse their young. A thick layer of fat called blubber
+				insulates them from cold ocean waters.
+				Some whales are known as baleen whales, including blue, right, bowhead, sei, and gray whales.   </div>
+			</div>
+			<div class="col-5  medRow"> 
+				<img src="img/shark.png">
+			</div>
+			<div class="col-5 medRow"> 
+				<div class="textcontent">Sharks star in blockbuster movies as blood-seeking villains, but in reality they’re far more 
+				fascinating and complicated than they’re often depicted in pop culture.
+				Based on fossilized teeth and scales, scientists believe that sharks have been around for more 
+				than 400 million years—long before the dinosaurs. The ocean’s top predators have evolved into roughly 500 species that come 
+				in all different sizes and colors and have varying diets and behavior.</div>
+			</div>	
+		</div>
+		<br> <br>
+		<div class="row colorlang ">
+			<div class="col-12  footernato">
+			<div class="footertext">	&copy; Created by Eleazar & Lagman. All Rights Reserved. <br>
+				Email: nature.eleazar@gmail.com <br>
+				Contact: 67504532 <br>
+				Address: #232 Toronto Canada, Seaside </div>
+			</div>
+			<br><br>
+		</div>
+
+		
+	</div>
+
+</body>
+</html>

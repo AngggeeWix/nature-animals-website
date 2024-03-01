@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="js/bootstrap.bundle.min.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Francois+One&family=Merriweather&family=Merriweather+Sans&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+
+<style type="text/css">
+	.header{
+		height: 500px;
+	}
+
+	.threeNaRow{
+		height: 220px;
+		background-color:#4E944F;
+	}
+	
+	.square{
+		height: 250px;
+	}
+
+	.ignoreRow{
+		height: 50px;
+	}
+
+	.leftNaMargin{
+		padding-left: 200px;
+		padding-top: 20px;
+		
+	}
+	
+	.next2{
+		padding-left: 200px;
+		padding-top: 20px;
+		height:700px;
+		
+	}
+	.gapIto{
+		grid-column-gap: 40px;
+	}
+
+	.colorlang{
+		background-color: black;
+		color: white;
+	}
+	.longRow{
+		height: 400px;
+	}
+	
+	.medRow{
+		height: 350px;
+	}
+
+	.captionRow{
+		height: 150px;
+		background-color:#83BD75;
+	}
+	.huliNaMargin{
+		padding-left:370px;
+	}
+	.smallpics{
+		height: 200px;
+	}
+
+	.footernato{
+		height: 120px;
+		
+	}
+
+	* {box-sizing:border-box}
+	
+	.img1{
+	margin-left:70px;
+	margin-top:10px;
+	}
+	.texttitle{
+	font-weight:bold;
+	font-family: 'Secular One', sans-serif;
+	margin-top:10px;
+	color:#E9EFC0;
+	font-size:20px;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	}
+	
+	.title2{
+	font-size:30px;
+	font-family: 'Secular One', sans-serif;
+	margin-top: 30px;
+	margin-left: 30px;
+	
+	}
+/* Slideshow container */
+.slideshow-container {
+  width: 1357px;
+  height:497px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+	.textcontent{
+	font-family: 'Assistant', sans-serif;
+	font-size:20px;
+	text-align:center;
+	margin-left:50px;
+	margin-top:20px;
+	}
+	
+	.textcontent2{
+	font-family: 'Assistant', sans-serif;
+	font-size:15px;
+	text-align:center;
+	color:black;
+	font-weight:bold;
+	}
+	
+	.square2{
+	background-color:white;
+	height:150px;
+	margin-top:40px;
+	margin-left:140px;
+	}
+	
+	.title3{
+	font-size:30px;
+	font-family: 'Secular One', sans-serif;
+	margin-top: 10px;
+	text-align:center;
+	color:black;
+	
+	}
+	
+	.textcontent3{
+	font-family: 'Assistant', sans-serif;
+	font-size:20px;
+	color:white;
+	font-weight:bold;
+	margin-top:80px;
+	}
+	
+	.textcontent4{
+	font-family: 'Assistant', sans-serif;
+	font-size:20px;
+	color:white;
+	font-weight:bold;
+	margin-left:40px;
+	}
+	
+	.wildtext{
+	font-size:100px;
+	font-family: 'Secular One', sans-serif;
+	text-align:center;
+	color:white;
+	margin-top:100px;
+	background-color:#4E944F;
+	}
+	
+	.textcontent5{
+	font-family: 'Assistant', sans-serif;
+	color:black;
+	margin-top:80px;
+	font-weight:bold;
+	font-size:18px;
+	}
+	
+	a:link {
+	text-decoration: none; 
+	}
+	
+	.footertext{
+	text-align:center;
+	margin-top:10px;
+	font-family: 'Assistant', sans-serif;
+	}
+	.shadow{
+	 border:2px solid #000000;
+      color:black;
+      font-size:50px;
+      -moz-box-shadow: 10px 10px 50px #ccc;
+      -webkit-box-shadow: 10px 10px 50px #ccc;
+      box-shadow: 10px 10px 50px #ccc;
+	}
+	
+	.shadow2{
+	filter: drop-shadow(10px 10px 4px #423F3E);
+	}
+	.shadow3{
+	filter: drop-shadow(10px 10px 4px #ACB992);
+	}
+	
+</style>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+		<a class="navbar-brand" href="#">
+		<img src="img/NATURE.png" alt="">
+		</a>
+		</div>
+
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+        <a class="nav-link" href="homepage.html">HOME</a>
+        <a class="nav-link" href="aerial.html">ANIMALS</a>
+        <a class="nav-link" href="">NATURE</a>
+        <a class="nav-link" href="">AWARENESS</a>
+		<a class="nav-link" href="ref.html">REFERENCES</a>
+		</nav>
+    </div>
+  </div>
+
+		<div class="row">
+			<div class="col-12 header">
+			<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="img/trees.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/lion.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/clean.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+			</div>
+		</div>
+		<br> <br>
+		<div class="row leftNaMargin gapIto">
+			<div class="col-3  threeNaRow">
+				<a href="aerial.html"><img src="img/bird.png" class="img1">
+				<div class="texttitle">Endangered, Animals <br> and Wild Life </div> </a> 
+			</div>
+			<div class="col-3  threeNaRow"> 
+			<a href="">	<img src="img/3.png" class="img1">
+			<div class="texttitle">Trees, Plants and Forest </div></a> 
+			</div>
+			<div class="col-3  threeNaRow ">
+			<a href="">	<img src="img/care.png" class="img1">
+			<div class="texttitle">Garbage Awareness   </div></a>
+			</div>
+		</div>
+		<br> <br>
+
+		<div class="row colorlang ">
+			<div class="col-12 square">
+			<div class="title2">Getting Back to Nature </div>
+			<div class="textcontent">Getting back to nature can not only improve your physical fitness, but your mental health too. Being amongst 
+			the plants and the wildlife can reduce <br> your stress and elevate your mood as you clear your mind of the daily 
+			chores in your life and let your innate self get back 
+			to nature. Getting some fresh air <br> every day can improve the quality of sleep you get as your body clock resets 
+			to the natural light around it. </div>
+		
+			</div>
+			<br><br>
+		</div>
+		
+
+		<div class="row colorlang next2 gapIto ">
+			<div class="col-3  square"> 
+				<img src="img/swim.jpg" width="250px" height="250px" >
+			</div>
+			<div class="col-3  square"> 
+				<img src="img/beach.jpg" width="400px" height="400px">
+			</div>
+			<div class="col-3  square2"> 
+			<div class="title3">Amazing Places </div>
+			<div class="textcontent2">The power of wanderlust is real. Catch a glimpse of the most gorgeous
+			destinations across the globe, and you'll feel a surge of inspiration and awe wash over you. </div>
+			</div>
+			<div class="col-3 square">
+			<img src="img/beach2.png" >
+			</div>
+
+		</div>
+		<br> <br>
+		<div class="row  leftNaMargin gapIto ">
+			<div class="col-3  square"> 
+					<img src="img/t1.jpg" width="300px" height="250px" class="shadow">
+			</div>
+			<div class="col-3  square"> 
+				<img src="img/hands.jpg" width="300px" height="250px" class="shadow">
+			</div>
+			<div class="col-3 square"> 
+					<img src="img/hey.png" width="300px" height="250px" class="shadow">
+			</div>
+			
+			<br> <br>
+		</div>
+		<br> <br>
+		<div class="row  leftNaMargin gapIto colorlang ">
+			<div class="col-3   longRow"> 
+				<img src="img/nature2.jpg" width="300px" height="300px">
+			</div>
+			<div class="col-3  longRow">
+				<div class="textcontent4">Nature is not simply a warehouse of resources to serve human needs. Rather, it 
+				is a highly integrated, interdependent functioning system upon which all life forms, 
+				including the soil, water, plants, animals and humans depend for survival.  </div>
+			</div>
+		</div>
+	
+		<div class="row  leftNaMargin gapIto ">
+			<div class="col-5 medRow"> 
+				<img src="img/rawr.png" width="350px" height="350px" class="shadow2">
+			</div>
+			<div class="col-5   medRow"> 
+					<div class="wildtext">Wildlife </div>
+			</div>
+			<div class="col-5    medRow"> 
+			<div class="textcontent5">Wildlife, like trees, is also a domestic asset that not only helps to maintain the ecological balance but also benefits from financial,
+			recreational and aesthetic points of perspective. There was a time when the number of wild animals was quite large when human interference
+			was minimum and there was no issue with their safety or conservation. But, with the development of farming
+			, settlement, industrial and other development activities, and primarily due to man’s greed, the number of wild animals gradually decreased
+			and decreased. </div>
+		</div>
+			<div class="col-5 medRow"> 
+				<img src="img/robin.jpg" width="350px" height="345px" class="shadow3"> 
+				
+			</div>	
+		</div>
+		<br> <br> <br>
+
+		<div class="row colorlang ">
+			<div class="col-12 footernato">
+			<div class="footertext">	&copy; Created by Eleazar & Lagman. All Rights Reserved. <br>
+				Email: nature.eleazar@gmail.com <br>
+				Contact: 67504532 <br>
+				Address: #232 Toronto Canada, Seaside </div>
+			</div>
+			<br><br>
+		</div>
+
+		
+	</div>
+<script>
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 2000); 
+}
+</script>
+
+</body>
+</html>

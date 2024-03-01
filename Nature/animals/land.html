@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.bundle.min.js">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Francois+One&family=Merriweather&family=Merriweather+Sans&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+
+<style type="text/css">
+	.header{
+		height: 500px;
+		
+	}
+
+	.threeNaRow{
+		height: 220px;
+		background-color:#4E944F;
+	}
+	
+	.square{
+		height: 250px;
+	}
+
+	.ignoreRow{
+		height: 50px;
+	}
+
+	.leftMargin{
+		padding-left: 200px;
+		padding-top: 20px;
+		
+	}
+	
+	.next2{
+		padding-left: 200px;
+		padding-top: 20px;
+		height:700px;
+		
+	}
+	.gapIto{
+		grid-column-gap: 40px;
+	}
+
+	.longRow{
+		height: 400px;
+	}
+	
+	.medRow{
+		height: 350px;
+	}
+
+
+	.footernato{
+		height: 120px;
+		
+	}
+
+	* {box-sizing:border-box}
+	
+	.img1{
+	margin-left:70px;
+	margin-top:10px;
+	}
+	.texttitle{
+	font-weight:bold;
+	font-family: 'Secular One', sans-serif;
+	margin-top:10px;
+	margin-bottom:30px;
+	font-size:60px;
+	text-shadow: 5px 5px white;
+	text-align: center;
+	}
+	
+
+	.slideshow-container {
+	  width: 1357px;
+	  height:497px;
+	  position: relative;
+	  margin: auto;
+	}
+
+
+	.mySlides {
+	  display: none;
+}
+
+
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	.textcontent{
+	font-family: 'Assistant', sans-serif;
+	font-size:18px;
+	text-align:center;
+	font-weight:bold;
+	color:white;
+	background-color:black;
+	padding:10px;
+	border-radius: 25px;
+	}
+	
+	
+	.square2{
+	background-color:white;
+	height:150px;
+	margin-top:40px;
+	}
+	
+	.title3{
+	font-size:30px;
+	font-family: 'Secular One', sans-serif;
+	margin-top: 10px;
+	text-align:center;
+	color:black;
+	
+	}
+	
+	.textcontent3{
+	font-family: 'Assistant', sans-serif;
+	font-size:20px;
+	color:white;
+	font-weight:bold;
+	margin-top:80px;
+	}
+	
+	.textcontent4{
+	font-family: 'Assistant', sans-serif;
+	font-size:20px;
+	color:white;
+	font-weight:bold;
+	margin-left:40px;
+	}
+	
+	.textcontent5{
+	font-family: 'Assistant', sans-serif;
+	color:black;
+	margin-top:80px;
+	font-weight:bold;
+	font-size:18px;
+	}
+	
+	a:link {
+	text-decoration: none; 
+	
+	}
+	
+	.footertext{
+	text-align:center;
+	margin-top:10px;
+	font-family: 'Assistant', sans-serif;
+	}
+	.shadow{
+	 border:2px solid #000000;
+      color:black;
+      font-size:50px;
+      -moz-box-shadow: 10px 10px 50px #ccc;
+      -webkit-box-shadow: 10px 10px 50px #ccc;
+      box-shadow: 10px 10px 50px #ccc;
+	}
+	
+	.shadow2{
+	filter: drop-shadow(10px 10px 4px #423F3E);
+	}
+	.shadow3{
+	filter: drop-shadow(10px 10px 4px #ACB992);
+	}
+
+	
+	.gapngcol{
+		grid-row-gap: 40px;
+	}
+	.leftNaMargin{
+		padding-left: 270px;
+	}
+	.gapIto{
+		grid-column-gap: 40px;
+	}
+	
+	.medRow{
+		height: 400px;
+		width: 400px;
+		margin-bottom:90px;
+	}
+
+		.colorlang{
+		background-color: black;
+		color: white;
+	}
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > * {
+    margin: 5px;
+  }
+}
+
+.media {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:10px;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+p {
+  font-family: 'Secular One', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing:1px;
+  color:#4E944F;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
+  }
+}
+
+body{
+background-color:#E4E9BE;
+}
+.imgh{
+background-image:url("img/headera.png");
+  background-repeat: no-repeat;
+}
+
+</style>
+<body>
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+		<a class="navbar-brand" href="#">
+		<img src="img/NATURE.png" alt="">
+		</a>
+		</div>
+
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+        <a class="nav-link" href="homepage.html">HOME</a>
+        <a class="nav-link" href="aerial.html">ANIMALS</a>
+        <a class="nav-link" href="">NATURE</a>
+        <a class="nav-link" href="">AWARENESS</a>
+		<a class="nav-link" href="ref.html">REFERENCES</a>
+		</nav>
+    </div>
+  </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 header imgh">
+			
+			</div>
+		</div>
+		<br> <br>
+		<div class="row leftMargin gapIto">
+			<div class="col-3  threeNaRow">
+				<div class="wrapper">
+				<div class="media">
+				
+				<div class="layer">
+				<a href="aerial.html"> <p>AERIAL <BR> ANIMALS</p> </a>
+				</div> 
+				<img src="img/2a.png"> 
+			</div> 
+			 </div> </a> </div> 
+			<div class="col-3  threeNaRow"> 
+				<div class="wrapper">
+				<div class="media">
+				<div class="layer">
+				<a href="land.html"> <p>LAND <BR> ANIMALS</p> </a>
+				</div>
+				<img src="img/meerkat.png">
+			</div>
+			 </div> </div>
+			
+			<div class="col-3  threeNaRow ">
+				<div class="wrapper">
+				<div class="media">
+				<div class="layer">
+				<a href="sea.html"> <p>SEA <BR> ANIMALS</p> </a>
+				</div>
+				<img src="img/whale.png">
+			</div>
+			 </div> </div>
+			</div>
+		</div>
+		<br> <br>
+
+		<div class="texttitle">LAND ANIMALS</div>
+		<div class="row  leftNaMargin gapIto gapngcol ">
+			<div class="col-5 medRow">
+				<img src="img/lion2.png">
+			</div>
+			<div class="col-5 medRow "> 
+				<div class="textcontent">	Lion prides can be as small as 3 or as big as 40 animals. In a pride, 
+				lions hunt prey, raise cubs, and defend their territory together. In prides the females do most of the hunting and cub rearing. 
+				Usually all the lionesses in the pride are related—mothers, daughters, grandmothers, and sisters.
+				Many of the females in the pride give birth at about the same time. A cub may nurse from other females as well as its mother. 
+				Each pride generally will have no more than two adult males.  </div>
+			</div>
+			<div class="col-5  medRow"> 
+				<img src="img/cheetah.png">
+			</div>
+			<div class="col-5  medRow"> 
+				<div class="textcontent">	The cheetah is the world’s fastest land animal and Africa’s most endangered big cat. 
+				Uniquely adapted for speed, the cheetah is capable of reaching speeds greater than 110 kilometers per hour in just over three seconds. <BR> <BR>
+				In many parts of the world there are strong cultural associations to keeping cheetahs as companions. There is a long history of the practice and 
+				it is commonly seen in ancient art.In contemporary times, cheetahs are still viewed as status symbols. Though cheetah ownership and exotic pet ownership
+				has been outlawed in many countries, there is still a high demand for cheetahs as pets.
+				</div>
+			</div>	
+		</div>
+		<br> <br>
+		<div class="row  leftNaMargin gapIto gapngcol ">
+			<div class="col-5  medRow">
+				<img src="img/meer.png">
+			</div>
+			<div class="col-5 medRow"> 
+				<div class="textcontent">Meerkats have scent pouches below their tails and rub these pouches on rocks 
+				and plants to mark their territory. The territories of different meerkat mobs often overlap, resulting in
+				constant disputes. When the two groups meet for a face-off, the results can be tragic. Meerkats are aggressive fighters
+				that often kill each other in these skirmishes. <BR> <BR> Knowing the high cost of an all-out war, they try to avoid serious 
+				conflict if possible. Usually, a lot of aggressive posturing and bluffing precedes any physical contact. These wars can look 
+				a bit like the human battles of yesteryear: 
+				both sides line up across a field and, at the same moment, charge forward with leaps and bounds, holding their tail rigid and 
+				straight up in the air.  </div>
+			</div>
+			<div class="col-5  medRow"> 
+				<img src="img/bear.png">
+			</div>
+			<div class="col-5 medRow"> 
+				<div class="textcontent">Considered talented swimmers, polar bears can sustain a pace of six miles per hour by 
+				paddling with their front paws and holding their hind legs flat like a rudder. They have a thick layer of body 
+				fat and a water-repellent coat that insulates them from the cold air and water.Polar bears spend over 50% of their
+				time hunting for food. Polar bears rely heavily on sea ice for traveling, hunting, resting, mating and, in some areas, maternal dens.</div>
+			</div>	
+		</div>
+		<br> <br>
+		<div class="row colorlang ">
+			<div class="col-12  footernato">
+			<div class="footertext">	&copy; Created by Eleazar & Lagman. All Rights Reserved. <br>
+				Email: nature.eleazar@gmail.com <br>
+				Contact: 67504532 <br>
+				Address: #232 Toronto Canada, Seaside </div>
+			</div>
+			<br><br>
+		</div>
+
+		
+	</div>
+
+</body>
+</html>
